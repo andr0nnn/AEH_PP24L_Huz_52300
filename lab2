@@ -1,0 +1,46 @@
+package pl.pp;
+
+import java.util.Scanner;
+
+  public class MojaDrugaAplikacja {
+   public static void main(String[] args) {
+    // to jest komentarz liniowy
+    Scanner scanner = new Scanner(System.in);
+
+        /* To jest komentarz blokowy
+           może on mieć wiele linii
+           tak, jak tutaj
+        */
+    System.out.println("Proszę podaj swoje imię:");
+    String forename = scanner.nextLine();
+    System.out.println("Proszę podaj swoje nazwisko:");
+    String surname = scanner.nextLine();
+
+    // Uzupełniona część kodu
+    System.out.println("Witaj " + forename + " " + surname);
+
+    // Dodatkowy fragment kodu, który tworzy zmienne x i y, przeprowadza na nich operacje arytmetyczne
+    // i wyświetla wyniki na konsoli
+    double x = 10;
+    double y = 2;
+    var result = x + y;
+    System.out.println("x + y = " + result);
+    result = x - y;
+    System.out.println("x - y = " + result);
+    result = x * y;
+    System.out.println("x * y = " + result);
+    result = x / y;
+    System.out.println("x / y = " + result);
+    result = x % y;
+    System.out.println("x % y = " + result);
+
+    // Prośba o wpisanie dwóch liczb i wyświetlenie wyniku dodawania
+    System.out.println("Wpisz dwie liczby rozdzielone klawiszem Enter:");
+    double first = scanner.nextDouble();
+    double second = scanner.nextDouble();
+    System.out.println("x + y = " + (first + second));
+
+    // Koniec programu
+    scanner.close();
+   }
+  }
